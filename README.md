@@ -71,10 +71,6 @@ Click Upload to preview and download the optimized image.
 
 Nginx cache: /var/cache/nginx
 
-Max size: 1 GB
-
-Inactive duration: 30 days
-
 Redis: Stores cache lookups for faster image retrieval.
 
 ETag headers: Allow browsers to cache unchanged images.
