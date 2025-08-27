@@ -1,0 +1,102 @@
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 1rem;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.mode-switch {
+  margin-bottom: 1rem;
+}
+
+.mode-switch button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid #ccc;
+  background: #f4f4f4;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.mode-switch button.active,
+.mode-switch button:hover {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.form {
+  margin: 1rem 0;
+}
+
+.form input[type="text"],
+.form input[type="file"] {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  width: 60%;
+}
+
+.form button {
+  padding: 0.5rem 1.2rem;
+  background: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background: #0056b3;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.options label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.options input,
+.options select {
+  margin-top: 0.3rem;
+  padding: 0.3rem;
+}
+
+.preview {
+  margin-top: 2rem;
+}
+
+.preview img {
+  max-width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.preview a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  background: #28a745;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.preview a:hover {
+  background: #218838;
+}

@@ -1,0 +1,23 @@
+
+spring:
+  application:
+    name: image-optimizing-proxy
+  r2dbc:
+    url: r2dbc:postgresql://postgres:5432/${POSTGRES_DB:imageproxy}
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD:postgres}
+  data:
+    redis:
+      host: ${REDIS_HOST:redis}
+      port: ${REDIS_PORT:6379}
+  main:
+    web-application-type: reactive
+
+server:
+  port: 8080
+
+app:
+  allowedOriginHosts: ${ALLOWED_ORIGIN_HOSTS:*}
+  maxBufferBytes: 20971520
+  cache:
+    ttlDays: 30
